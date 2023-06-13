@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "NitterRedirect",
+  "version": "1.0",
+
+  "description": "Redirects twitter.com links to nitter.it",
+  "icons": {
+    "48": "icons/nitter_48.png",
+    "96": "icons/nitter_96.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+  
+  "background": {
+    "scripts": ["NitterRedirect.js"],
+    "persistent": false
+  }
+}
